@@ -6,7 +6,8 @@ import {UserButton} from '@clerk/nextjs'
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-function SideNav() {
+function SideNav({ isOpen, onClose }) {
+  
   const menuList = [
     {
       id: 1,
