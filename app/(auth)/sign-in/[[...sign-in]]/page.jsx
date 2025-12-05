@@ -11,7 +11,7 @@ export default function Page() {
 
       {/* Right Side Signup Form */}
       <div className="flex items-center justify-center p-8">
-        <SignIn />
+        <SignIn signInUrl="sign-in" forceRedirectUrl={"/dashboard"}/>
       </div>
     </div>
   );
