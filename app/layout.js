@@ -17,15 +17,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
-    <html lang="en">
-      <body
-        className={outfit.className}
-      >
-        <Toaster />
-        {children}
-      </body>
-    </html>
+    <ClerkProvider
+      afterSignInUrl="/dashboard"
+      afterSignUpUrl="/dashboard"
+    >
+      <html lang="en">
+        <body
+          className={outfit.className}
+        >
+          <Toaster />
+          {children}
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
